@@ -1,0 +1,30 @@
+[
+  {
+    "question": "How do I get started using your platform?",
+    "answer": "Getting started on CodeCrony is as simple as signing in and thats all!"
+  },
+  {
+    "question": "What types of third-party libraries are available on your platform?",
+    "answer": "We offer access to a wide range of libraries spanning from frontend to backend."
+  },
+  {
+    "question": "Do I need to pay to access certain libraries?",
+    "answer": "You can choose a plan that meets your needs. Start with the free package and only pay if satisfied."
+  },
+  {
+    "question": "How frequently are new libraries added to your platform?",
+    "answer": "We have access to most artifact repositories where we collect real-time updates of the libraries."
+  },
+  {
+    "question": "How do I integrate libraries from your platform into my project?",
+    "answer": "You simple install the libraries using a package manager based on the technology you are using."
+  },
+  {
+    "question": "How can I be sure that the libraries on your platform are reliable and secure?",
+    "answer": "We provide details of the libraries and also a link to the official documentation."
+  },
+  {
+    "question": "Do you offer any analytics or insights into library usage?",
+    "answer": "We offer real-time data and information about the libraries including usage, updates and the contributors."
+  }
+]
