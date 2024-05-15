@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
       <NextAuthProvider>
-          <div>
+          <div className="min-h-screen">
               {/*header component*/}
               <Header/>
               <main>
