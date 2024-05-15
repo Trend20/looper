@@ -6,15 +6,15 @@ const Pricing = () => {
                     className="rounded-2xl border border-indigo-600 p-6 shadow-sm ring-1 ring-indigo-600 sm:order-last sm:px-8 lg:p-12"
                 >
                     <div className="text-center">
-                        <h2 className="text-lg font-medium text-gray-900">
+                        <h2 className="text-lg font-medium text-white">
                             Pro
                             <span className="sr-only">Plan</span>
                         </h2>
 
                         <p className="mt-2 sm:mt-4">
-                            <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 30$ </strong>
+                            <strong className="text-3xl font-bold text-white sm:text-4xl"> 30$ </strong>
 
-                            <span className="text-sm font-medium text-gray-700">/month</span>
+                            <span className="text-sm font-medium text-white">/month</span>
                         </p>
                     </div>
 
@@ -31,7 +31,7 @@ const Pricing = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
                             </svg>
 
-                            <span className="text-gray-700"> 20 users included </span>
+                            <span className="text-white"> 20 users included </span>
                         </li>
 
                         <li className="flex items-center gap-1">
@@ -46,7 +46,7 @@ const Pricing = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
                             </svg>
 
-                            <span className="text-gray-700"> 5GB of storage </span>
+                            <span className="text-white"> 5GB of storage </span>
                         </li>
 
                         <li className="flex items-center gap-1">
@@ -61,7 +61,7 @@ const Pricing = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
                             </svg>
 
-                            <span className="text-gray-700"> Email support </span>
+                            <span className="text-white"> Email support </span>
                         </li>
 
                         <li className="flex items-center gap-1">
@@ -76,7 +76,7 @@ const Pricing = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
                             </svg>
 
-                            <span className="text-gray-700"> Help center access </span>
+                            <span className="text-white"> Help center access </span>
                         </li>
 
                         <li className="flex items-center gap-1">
@@ -91,7 +91,7 @@ const Pricing = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
                             </svg>
 
-                            <span className="text-gray-700"> Phone support </span>
+                            <span className="text-white"> Phone support </span>
                         </li>
 
                         <li className="flex items-center gap-1">
@@ -106,7 +106,7 @@ const Pricing = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
                             </svg>
 
-                            <span className="text-gray-700"> Community access </span>
+                            <span className="text-white"> Community access </span>
                         </li>
                     </ul>
 
@@ -120,15 +120,15 @@ const Pricing = () => {
 
                 <div className="rounded-2xl border border-gray-200 p-6 shadow-sm sm:px-8 lg:p-12">
                     <div className="text-center">
-                        <h2 className="text-lg font-medium text-gray-900">
+                        <h2 className="text-lg font-medium text-white">
                             Starter
                             <span className="sr-only">Plan</span>
                         </h2>
 
                         <p className="mt-2 sm:mt-4">
-                            <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> 20$ </strong>
+                            <strong className="text-3xl font-bold text-white sm:text-4xl"> 20$ </strong>
 
-                            <span className="text-sm font-medium text-gray-700">/month</span>
+                            <span className="text-sm font-medium text-white">/month</span>
                         </p>
                     </div>
 
@@ -145,7 +145,7 @@ const Pricing = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
                             </svg>
 
-                            <span className="text-gray-700"> 10 users included </span>
+                            <span className="text-white"> 10 users included </span>
                         </li>
 
                         <li className="flex items-center gap-1">
@@ -160,7 +160,7 @@ const Pricing = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
                             </svg>
 
-                            <span className="text-gray-700"> 2GB of storage </span>
+                            <span className="text-white"> 2GB of storage </span>
                         </li>
 
                         <li className="flex items-center gap-1">
@@ -175,7 +175,7 @@ const Pricing = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
                             </svg>
 
-                            <span className="text-gray-700"> Email support </span>
+                            <span className="text-white"> Email support </span>
                         </li>
 
                         <li className="flex items-center gap-1">
@@ -190,7 +190,7 @@ const Pricing = () => {
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
                             </svg>
 
-                            <span className="text-gray-700"> Help center access </span>
+                            <span className="text-white"> Help center access </span>
                         </li>
                     </ul>
 
