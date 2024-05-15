@@ -13,7 +13,7 @@ const FrequentlyAskedQuestions = () => {
     };
     return (
         <div className="w-full md:w-3/4 lg:w-1/2 mx-auto flex flex-col justify-center items-center p-4 md:p-6">
-            <h2 className="text-4xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl font-extrabold text-white sm:text-5xl">
                 Frequently Asked Questions
             </h2>
             <div className="space-y-4 w-full mt-6 md:mt-10 text-gray-400">
@@ -26,7 +26,7 @@ const FrequentlyAskedQuestions = () => {
                             <span>{faq.question}</span>
                             <span className="text-lg md:text-xl">
                   {openIndex === index ? (
-                      <LiaTimesSolid fill="#4ccd99"/>
+                      <LiaTimesSolid fill="#4F46E5FF"/>
                   ) : (
                       <FiPlus fill="#4ccd99"/>
                   )}

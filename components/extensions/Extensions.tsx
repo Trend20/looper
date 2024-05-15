@@ -5,7 +5,7 @@ const Extensions = () =>{
         <section className="text-white w-full flex py-32 justify-center items-center">
             <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 flex flex-col text-center justify-center items-center">
                 <div className="max-w-xl">
-                    <h2 className="text-4xl font-bold sm:text-4xl">Browser Extension</h2>
+                    <h2 className="text-3xl font-extrabold text-white sm:text-5xl">Browser Extension</h2>
 
                     <p className="mt-4 text-gray-400">
                         Enhance your browsing experience with our convenient browser extension.

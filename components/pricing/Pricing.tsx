@@ -2,7 +2,7 @@ const Pricing = () => {
     return (
         <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
             <div className="max-w-xl text-center">
-                <h2 className="text-4xl font-bold sm:text-4xl">Flexible Pricing Plans</h2>
+                <h2 className="text-3xl font-extrabold text-white sm:text-5xl">Flexible Pricing Plans</h2>
 
                 <p className="mt-4 text-gray-400">
                     Choose the plan that best fits your bookmarking needs. Whether you're a casual user or a power user, we've got you covered.

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaGithub } from "react-icons/fa6";
 
 const Hero = () =>{
     return (
@@ -20,16 +21,17 @@ const Hero = () =>{
                     <div className="mt-8 flex flex-wrap justify-center gap-4">
                         <Link
                             className="block w-full rounded-full border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
-                            href="#"
+                            href={"/auth"}
                         >
                             Get Started
                         </Link>
 
                         <Link
-                            className="block w-full rounded border border-indigo-600 bg-white text-indigo-600 px-12 py-3 text-sm font-medium hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
-                            href="#"
+                            target={'_blank'}
+                            className="flex items-center justify-center space-x-3 w-full rounded-full border border-indigo-600 bg-white text-indigo-600 px-12 py-3 text-sm font-medium hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+                            href={"https://github.com/Trend20/looper"}
                         >
-                            GitHub
+                            <i className="mr-3"><FaGithub size={25}/></i> Star
                         </Link>
                     </div>
                 </div>
