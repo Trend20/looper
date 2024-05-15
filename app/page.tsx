@@ -6,7 +6,7 @@ import FrequentlyAskedQuestions from "@/components/faq/FrequentlyAskedQuestions"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="flex min-h-screen flex-col items-center justify-center">
       <Hero />
       <Features />
       <Extensions />
