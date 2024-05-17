@@ -1,4 +1,5 @@
-import Image from "next/image";
+import extensionsData from '../../data/info.json'
+import SingleExtension from "@/components/extensions/SingleExtension";
 
 const Extensions = () =>{
     return (
@@ -12,15 +13,11 @@ const Extensions = () =>{
                     </p>
                 </div>
                 <div className="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
-                    <div className="flex items-center justify-center border border-gray-600 rounded-lg p-3">
-                        <Image src={'/icons/chrome.svg'} alt={'chrome'} width={100} height={100} />
-                    </div>
-                    <div className="flex items-center justify-center border border-gray-600 rounded-lg p-3">
-                        <Image src={'/icons/firefox.svg'} alt={'firefox'} width={100} height={100} />
-                    </div>
-                    <div className="flex items-center justify-center border border-gray-600 rounded-lg p-3">
-                        <Image src={'/icons/brave.svg'} alt={'brave'} width={100} height={100} />
-                    </div>
+                    {
+                        extensionsData.extensions.map((extension) => (
+                            <SingleExtension key={extension.id} feature={extension} />
+                        ))
+                    }
                 </div>
             </div>
         </section>

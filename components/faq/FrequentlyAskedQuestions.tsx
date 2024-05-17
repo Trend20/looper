@@ -17,7 +17,7 @@ const FrequentlyAskedQuestions = () => {
                 Frequently Asked Questions
             </h2>
             <div className="space-y-4 w-full mt-6 md:mt-10 text-gray-400">
-                {faqData.map((faq, index) => (
+                {faqData.faq.map((faq, index) => (
                     <div className="border rounded-lg border-gray-600" key={index}>
                         <button
                             className="w-full flex items-center justify-between p-3 md:p-4"

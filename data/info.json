@@ -1,30 +1,70 @@
-[
+
   {
-    "question":"What is Looper?",
-    "answer": "Looper is a tool designed to help you save, search, and organize your favorite websites effortlessly. With powerful features like collections and advanced search, it streamlines your browsing experience."
-  },
-  {
-    "question": "How do I save a link using the Bookmark Manager?",
-    "answer": "You can save a link with just one click! Use our browser extension to quickly save any webpage you’re on. You can also manually add links through the Looper dashboard."
-  },
-  {
-    "question": "Can I organize my bookmarks into categories?",
-    "answer": "Absolutely! You can create customized collections to organize your bookmarks. Group related links together for easy access and a clutter-free browsing experience."
-  },
-  {
-    "question": "Is there a limit to the number of bookmarks I can save?",
-    "answer": "With our Free Plan, you can save up to 100 bookmarks. For unlimited bookmarks, consider upgrading to our Pro or Premium plans, which offer additional features and benefits."
-  },
-  {
-    "question": "How do I install the browser extension?",
-    "answer": "Installing the browser extension is easy. Simply visit the extensions page in your browser’s store, search for our Bookmark Manager, and click ‘Install.’ Follow the prompts, and you’ll be set up in no time."
-  },
-  {
-    "question": "What support options are available if I encounter issues?",
-    "answer": "For any issues or questions, you can reach out to our support team through the Contact Us page. Pro and Premium plan users receive priority support. Additionally, our comprehensive Help Center provides guides and troubleshooting tips."
-  },
-  {
-    "question": "How can I contribute to the development of the project?",
-    "answer": "We welcome contributions from our user community! Visit our GitHub repository to fork, clone, and code. Submit pull requests and join the discussions to help us improve and expand the project."
+    "faq":[
+      {
+        "question": "What is Looper?",
+        "answer": "Looper is a tool designed to help you save, search, and organize your favorite websites effortlessly. With powerful features like collections and advanced search, it streamlines your browsing experience."
+      },
+      {
+        "question": "How do I save a link using the Bookmark Manager?",
+        "answer": "You can save a link with just one click! Use our browser extension to quickly save any webpage you’re on. You can also manually add links through the Looper dashboard."
+      },
+      {
+        "question": "Can I organize my bookmarks into categories?",
+        "answer": "Absolutely! You can create customized collections to organize your bookmarks. Group related links together for easy access and a clutter-free browsing experience."
+      },
+      {
+        "question": "Is there a limit to the number of bookmarks I can save?",
+        "answer": "With our Free Plan, you can save up to 100 bookmarks. For unlimited bookmarks, consider upgrading to our Pro or Premium plans, which offer additional features and benefits."
+      },
+      {
+        "question": "How do I install the browser extension?",
+        "answer": "Installing the browser extension is easy. Simply visit the extensions page in your browser’s store, search for our Bookmark Manager, and click ‘Install.’ Follow the prompts, and you’ll be set up in no time."
+      },
+      {
+        "question": "What support options are available if I encounter issues?",
+        "answer": "For any issues or questions, you can reach out to our support team through the Contact Us page. Pro and Premium plan users receive priority support. Additionally, our comprehensive Help Center provides guides and troubleshooting tips."
+      },
+      {
+        "question": "How can I contribute to the development of the project?",
+        "answer": "We welcome contributions from our user community! Visit our GitHub repository to fork, clone, and code. Submit pull requests and join the discussions to help us improve and expand the project."
+      }
+    ],
+    "features": [
+      {
+        "id":1,
+        "title":"Store Links Easily.",
+        "description":"Save your favorite websites with a single click.",
+        "imageUrl":"/icons/store.svg"
+      },
+      {
+        "id":2,
+        "title":"Powerful Search.",
+        "description":"Quickly find any saved link with our advanced search functionality.",
+        "imageUrl":"/icons/search.svg"
+      },
+      {
+        "id":3,
+        "title":"Organize Into Collections.",
+        "description":"Create customized bookmarks to organize your bookmarks.",
+        "imageUrl":"/icons/collection.svg"
+      }
+    ],
+   "extensions": [
+      {
+        "id": 1,
+        "name":"Chrome",
+        "icon":"/icons/chrome.svg"
+      },
+      {
+        "id": 2,
+        "name":"Firefox",
+        "icon":"/icons/firefox.svg"
+      },
+      {
+        "id": 3,
+        "name":"Brave",
+        "icon":"/icons/brave.svg"
+      }
+   ]
   }
-]
