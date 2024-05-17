@@ -16,7 +16,7 @@ const features = [
     {
         id:3,
         title:'Organize Into Collections.',
-        description:'Create customized collections to organize your bookmarks.',
+        description:'Create customized bookmarks to organize your bookmarks.',
         imageUrl:'/icons/collection.svg'
     }
 ]

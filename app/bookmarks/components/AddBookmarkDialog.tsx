@@ -4,8 +4,9 @@ import { Dialog } from "@material-tailwind/react";
 import { AiOutlineClose } from "react-icons/ai";
 import { ClipLoader } from "react-spinners";
 
-const AddBookmarkDialog = ({ open, handleOpen }: any) =>{
-    const [name, setName] = useState("");
+const AddBookmarkDialog = ({ open, handleOpen, getBookmarks }: any) =>{
+    const [title, setTitle] = useState("");
+    const [url, setUrl] = useState("");
     const [description, setDescription] = useState("");
     const [loading, setLoading] = useState(false);
 
@@ -14,17 +15,19 @@ const AddBookmarkDialog = ({ open, handleOpen }: any) =>{
         e.preventDefault();
         setLoading(true);
         try {
-            const res = await fetch("/api/collections", {
+            const res = await fetch("/api/bookmarks", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify({ name, description }),
+                body: JSON.stringify({ title, url, description }),
             });
             setLoading(false);
             if (res.ok) {
-                setName("");
+                setTitle("");
+                setUrl("");
                 setDescription("");
+                getBookmarks();
                 handleOpen();
             } else {
                 console.log("collection could not be created");
@@ -64,9 +67,18 @@ const AddBookmarkDialog = ({ open, handleOpen }: any) =>{
                     <div className="flex mt-5">
                         <input
                             type="text"
-                            onChange={(e) => setName(e.target.value)}
-                            value={name}
-                            placeholder="Name"
+                            onChange={(e) => setTitle(e.target.value)}
+                            value={title}
+                            placeholder="Title"
+                            className="p-3 flex border border-grey rounded-md w-full"
+                        />
+                    </div>
+                    <div className="flex mt-5">
+                        <input
+                            type="text"
+                            onChange={(e) => setUrl(e.target.value)}
+                            value={url}
+                            placeholder="Url"
                             className="p-3 flex border border-grey rounded-md w-full"
                         />
                     </div>
@@ -81,10 +93,10 @@ const AddBookmarkDialog = ({ open, handleOpen }: any) =>{
                     </div>
                     <div className="space-x-2 flex justify-end w-full mt-5">
                         <button
-                            className="p-3 flex justify-center items-center bg-teal rounded-md font-semibold w-32"
+                            className="p-3 flex justify-center items-center text-white rounded-md bg-indigo-600 font-light w-32"
                             type="submit"
                         >
-                            {loading ? <ClipLoader color="#fff" /> : "Submit"}
+                            {loading ? <ClipLoader color="#fff"/> : "Submit"}
                         </button>
                     </div>
                 </form>

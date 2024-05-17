@@ -7,7 +7,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Collection {
+model Bookmarks {
   id          String   @id @default(auto()) @map("_id") @db.ObjectId
   title       String
   description String

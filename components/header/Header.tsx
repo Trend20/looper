@@ -22,7 +22,7 @@ const Header = () =>{
                             >
                                 Login
                             </Link> :
-                               <Link href={"/collections"}>
+                               <Link href={"/bookmarks"}>
                                    <Image src={session.user?.image!} alt={session.user?.name!} width={50} height={50} className="rounded-full" />
                                </Link>
                             }
