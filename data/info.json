@@ -1,30 +1,30 @@
 [
   {
-    "question": "How do I get started using your platform?",
-    "answer": "Getting started on CodeCrony is as simple as signing in and thats all!"
+    "question":"What is Looper?",
+    "answer": "Looper is a tool designed to help you save, search, and organize your favorite websites effortlessly. With powerful features like collections and advanced search, it streamlines your browsing experience."
   },
   {
-    "question": "What types of third-party libraries are available on your platform?",
-    "answer": "We offer access to a wide range of libraries spanning from frontend to backend."
+    "question": "How do I save a link using the Bookmark Manager?",
+    "answer": "You can save a link with just one click! Use our browser extension to quickly save any webpage you’re on. You can also manually add links through the Looper dashboard."
   },
   {
-    "question": "Do I need to pay to access certain libraries?",
-    "answer": "You can choose a plan that meets your needs. Start with the free package and only pay if satisfied."
+    "question": "Can I organize my bookmarks into categories?",
+    "answer": "Absolutely! You can create customized collections to organize your bookmarks. Group related links together for easy access and a clutter-free browsing experience."
   },
   {
-    "question": "How frequently are new libraries added to your platform?",
-    "answer": "We have access to most artifact repositories where we collect real-time updates of the libraries."
+    "question": "Is there a limit to the number of bookmarks I can save?",
+    "answer": "With our Free Plan, you can save up to 100 bookmarks. For unlimited bookmarks, consider upgrading to our Pro or Premium plans, which offer additional features and benefits."
   },
   {
-    "question": "How do I integrate libraries from your platform into my project?",
-    "answer": "You simple install the libraries using a package manager based on the technology you are using."
+    "question": "How do I install the browser extension?",
+    "answer": "Installing the browser extension is easy. Simply visit the extensions page in your browser’s store, search for our Bookmark Manager, and click ‘Install.’ Follow the prompts, and you’ll be set up in no time."
   },
   {
-    "question": "How can I be sure that the libraries on your platform are reliable and secure?",
-    "answer": "We provide details of the libraries and also a link to the official documentation."
+    "question": "What support options are available if I encounter issues?",
+    "answer": "For any issues or questions, you can reach out to our support team through the Contact Us page. Pro and Premium plan users receive priority support. Additionally, our comprehensive Help Center provides guides and troubleshooting tips."
   },
   {
-    "question": "Do you offer any analytics or insights into library usage?",
-    "answer": "We offer real-time data and information about the libraries including usage, updates and the contributors."
+    "question": "How can I contribute to the development of the project?",
+    "answer": "We welcome contributions from our user community! Visit our GitHub repository to fork, clone, and code. Submit pull requests and join the discussions to help us improve and expand the project."
   }
 ]
