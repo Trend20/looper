@@ -1,13 +1,18 @@
 "use client"
 
 import Link from "next/link";
+import {useState} from "react";
+import AddBookmarkDialog from "@/app/collections/components/AddBookmarkDialog";
 
 const CollectionsPage = () =>{
+    const [open, setOpen] = useState(false);
+
+    const handleOpen = () => setOpen(!open);
     return(
         <div className="flex border-2 border-gray-600 w-full py-5 flex-col items-center justify-center">
             <div className="flex justify-end space-x-3 items-center w-full px-3">
                 <input type="text" placeholder="search links" className="p-3 w-1/2 border border-gray-600 rounded-full outline-0 focus:outline-none" />
-                <button className="block w-full rounded-full border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none active:text-opacity-75 sm:w-auto">Add Link</button>
+                <button onClick={handleOpen} className="block w-full rounded-full border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none active:text-opacity-75 sm:w-auto">Add Link</button>
             </div>
             <div className="flex flex-col w-full space-y-2 mt-10">
                 <hr className="border-gray-600 border"/>
@@ -62,6 +67,7 @@ const CollectionsPage = () =>{
                     </div>
                 </div>
             </div>
+            <AddBookmarkDialog open={open} handleOpen={handleOpen} />
         </div>
     )
 }
