@@ -1,8 +1,8 @@
 "use client"
 
-import Link from "next/link";
 import {useEffect, useState} from "react";
 import AddBookmarkDialog from "@/app/bookmarks/components/AddBookmarkDialog";
+import Bookmark from "@/app/bookmarks/components/Bookmark";
 
 const CollectionsPage = () =>{
     const [open, setOpen] = useState(false);
@@ -32,22 +32,7 @@ const CollectionsPage = () =>{
                 bookmarks.length > 0 ? <div className="grid grid-cols-3 w-full mt-10">
                     {
                         bookmarks.map((bookmark) => (
-                            <div key={bookmark.id} className="flex flex-col p-2 justify-between rounded-lg shadow-2xl">
-                                <div className="flex flex-col w-1/4">
-                                    <h6 className="text-2xl font-semibold">{bookmark.title}</h6>
-                                    <p className="text-sm font-light text-gray-400">{bookmark.description}</p>
-                                </div>
-                                <div className="flex justify-center text-gray-400 space-x-2 w-1/2">
-                                    <p className='bg-indigo-600 rounded-full text-xs h-7 flex items-center justify-center w-20'>styles</p>
-                                    <p className='bg-indigo-600 rounded-full text-xs h-7 flex items-center justify-center w-20'>ui</p>
-                                    <p className='bg-indigo-600 rounded-full text-xs h-7 flex items-center justify-center w-20'>frontend</p>
-                                    <p className='bg-indigo-600 rounded-full text-xs h-7 flex items-center justify-center w-20'>tailwind</p>
-                                </div>
-                                <div className="flex justify-end w-28">
-                                    <Link href={bookmark.url} target={'_blank'}
-                                          className="flex items-center w-full justify-center rounded-full h-10 bg-indigo-600 text-white">Visit</Link>
-                                </div>
-                            </div>
+                            <Bookmark bookmark={bookmark} key={bookmark.id} />
                         ))
                     }
                 </div>
