@@ -13,7 +13,8 @@ const Footer = () => {
                     </p>
 
                     <Link
-                        href="#"
+                        href={"https://github.com/Trend20/looper"}
+                        target="_blank"
                         className="mt-8 inline-block rounded-full border border-indigo-600 bg-indigo-600 text-white px-12 py-3 text-sm font-medium hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500"
                     >
                         Get Started
@@ -34,7 +35,7 @@ const Footer = () => {
                     </ul>
                     <div className="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
                             <Link
-                                href="#"
+                                href="https://github.com/Trend20/looper"
                                 rel="noreferrer"
                                 target="_blank"
                                 className="text-gray-200 transition hover:opacity-75"
