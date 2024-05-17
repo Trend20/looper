@@ -5,7 +5,7 @@ const Pricing = () => {
                 <h2 className="text-3xl font-extrabold text-white sm:text-5xl">Flexible Pricing Plans</h2>
 
                 <p className="mt-4 text-gray-400">
-                    Choose the plan that best fits your bookmarking needs. Whether you're a casual user or a power user, we've got you covered.
+                    Choose the plan that best fits your bookmarking needs. Whether you&rsquo;re a casual user or a power user, we&rsquo;ve got you covered.
                 </p>
             </div>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-center md:gap-8 mt-8">
