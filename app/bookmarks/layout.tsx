@@ -7,7 +7,7 @@ const CollectionLayout = ({children}: Readonly<{
     const pathname = usePathname();
     const isLogin = pathname === "/";
     return(
-        <div className="flex justify-center items-center w-full px-56">
+        <div className="flex justify-center min-h-screen w-full px-56">
             <main className='w-full'>
                 {children}
             </main>

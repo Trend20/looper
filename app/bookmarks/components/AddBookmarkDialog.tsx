@@ -54,7 +54,7 @@ const AddBookmarkDialog = ({ open, handleOpen, getBookmarks }: any) =>{
             >
                 <div className="flex items-center justify-between">
                     <h3 className="flex flex-col items-start font-bold">
-                        New collection
+                        Add Link
                     </h3>
                     <i
                         onClick={handleOpen}

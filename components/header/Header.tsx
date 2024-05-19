@@ -17,7 +17,7 @@ const Header = () =>{
                     <div className="flex items-center gap-4">
                         <div className="sm:flex sm:gap-4">
                             {!session ? <Link
-                                className="border-indigo-600 bg-indigo-600 rounded-full px-5 py-2.5 text-sm font-medium text-white shadow"
+                                className="border-indigo-600 bg-[#4F46E5FF] rounded-full px-5 py-2.5 text-sm font-medium text-white shadow"
                                 href={"/auth"}
                             >
                                 Login
