@@ -8,6 +8,7 @@ import {NextAuthProvider} from "@/app/providers";
 import {useEffect, useState} from "react";
 import Loader from "@/components/common/Loader";
 import {usePathname} from "next/navigation";
+import Toast from "@/components/common/Toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
@@ -35,6 +36,7 @@ export default function RootLayout({
                   </main>
                   {/*  footer component*/}
                   {!isAuth && <Footer/>}
+                  <Toast />
               </div>
           }
       </NextAuthProvider>
