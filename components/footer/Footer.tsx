@@ -15,9 +15,9 @@ const Footer = () => {
                     <Link
                         href={"https://github.com/Trend20/looper"}
                         target="_blank"
-                        className="mt-8 inline-block rounded-full border border-indigo-600 bg-[#4F46E5FF] text-white px-12 py-3 text-sm font-medium hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500"
+                        className="mt-8 inline-block rounded-full border border-indigo-600 bg-[#4F46E5FF] text-white px-12 py-3 text-sm font-medium hover:text-white focus:outline-none"
                     >
-                        Get Started
+                        Contribute
                     </Link>
                 </div>
 
@@ -26,11 +26,11 @@ const Footer = () => {
                 >
                     <ul className="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
                         <li>
-                            <Link href="#" className="text-white transition hover:opacity-75"> Terms & Conditions </Link>
+                            <Link href="#" className="text-gray-400 transition hover:opacity-75"> Terms & Conditions </Link>
                         </li>
 
                         <li>
-                            <Link href="#" className="text-white transition hover:opacity-75"> Privacy Policy </Link>
+                            <Link href="#" className="text-gray-400 transition hover:opacity-75"> Privacy Policy </Link>
                         </li>
                     </ul>
                     <div className="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
