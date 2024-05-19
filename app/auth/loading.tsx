@@ -1,5 +1,7 @@
+import Loader from "@/components/common/Loader";
+
 const LoadingPage = () =>{
-    return <div>Loading...</div>;
+    return <Loader />
 }
 
 export default LoadingPage;
