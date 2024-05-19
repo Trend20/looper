@@ -49,7 +49,7 @@ const CollectionsPage = () =>{
                     </div>
                     :
                     <div
-                        className="flex w-3/4 mx-auto mt-20 shadow-2xl rounded-lg bg-gray-900 py-5 flex-col items-center justify-center">
+                        className="flex w-3/4 mx-auto mt-20 shadow-2xl min-h-screen rounded-lg bg-gray-900 py-5 flex-col items-center justify-center">
                         {bookmarks && bookmarks.length > 0 &&
                             <div className="flex justify-end space-x-3 items-center w-full px-3">
                                 <input type="text" placeholder="Search...."

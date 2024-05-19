@@ -15,7 +15,7 @@ const AddBookmarkDialog = ({ open, handleOpen, getBookmarks }: any) =>{
     const handleSubmit = async (e: { preventDefault: () => void }) => {
         e.preventDefault();
         setLoading(true);
-        if (title !== "" && description !== "" && url !== "") {
+        if ((title !== "" && url !== "") || description !== "" ) {
             try {
                 const res = await fetch("/api/bookmarks", {
                     method: "POST",
