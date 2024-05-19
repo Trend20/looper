@@ -8,7 +8,7 @@ export async function POST(request: Request) {
     try {
         const body = await request.json();
         const { title, description, url } = body;
-        const collection = await prisma.collection.create({
+        const collection = await prisma.bookmarks.create({
             data: {
                 title,
                 description,
@@ -24,7 +24,7 @@ export async function POST(request: Request) {
 // getting all bookmarks
 export async function GET() {
     try {
-        const res = await prisma.collection.findMany();
+        const res = await prisma.bookmarks.findMany();
         return NextResponse.json(res, { status: 201 });
     } catch (error) {
         return NextResponse.json(
