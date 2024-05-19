@@ -4,11 +4,14 @@ import {useEffect, useState} from "react";
 import AddBookmarkDialog from "@/app/bookmarks/components/AddBookmarkDialog";
 import Bookmark from "@/app/bookmarks/components/Bookmark";
 import Image from "next/image";
+import {useSession} from "next-auth/react";
+import {redirect} from "next/navigation";
 
 const CollectionsPage = () =>{
     const [open, setOpen] = useState(false);
     const [bookmarks, setBookmarks] = useState<any[]>([]);
     const [loading, setLoading] = useState(false);
+    const {data: session} = useSession();
 
     const getBookmarks = async () => {
         setLoading(true);
@@ -23,6 +26,10 @@ const CollectionsPage = () =>{
     }, []);
 
     const handleOpen = () => setOpen(!open);
+
+    if(!session){
+        redirect('/')
+    }
     return(
         <div className="flex w-3/4 mx-auto mt-20 shadow-2xl rounded-lg bg-gray-900 py-5 flex-col items-center justify-center">
             {bookmarks.length > 0 && <div className="flex justify-end space-x-3 items-center w-full px-3">

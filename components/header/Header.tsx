@@ -2,9 +2,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useSession} from "next-auth/react";
+import {useState} from "react";
+import Logout from "@/app/auth/components/Logout";
 
 const Header = () =>{
     const { data: session } = useSession();
+    const[showCard, setShowCard] = useState(false);
+
+    const toggleCard = () =>{
+        setShowCard(!showCard);
+    }
     return (
         <header className="w-full py-4">
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
@@ -22,14 +29,17 @@ const Header = () =>{
                             >
                                 Login
                             </Link> :
-                               <Link href={"/bookmarks"}>
+                               <button onClick={toggleCard}>
                                    <Image src={session.user?.image!} alt={session.user?.name!} width={50} height={50} className="rounded-full" />
-                               </Link>
+                               </button>
                             }
                         </div>
                     </div>
                 </div>
             </div>
+            {showCard && <div className="flex absolute right-72">
+                <Logout/>
+            </div>}
         </header>
 
     )
