@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from "react";
+import React, {ChangeEvent, useState} from "react";
 import { Dialog } from "@material-tailwind/react";
 import { AiOutlineClose } from "react-icons/ai";
 import { ClipLoader } from "react-spinners";
@@ -44,7 +44,7 @@ const AddBookmarkDialog = ({ open, handleOpen, getBookmarks }: any) =>{
                 onPointerEnterCapture
                 onPointerLeaveCapture
                 open={open}
-                size="xs"
+                size="md"
                 handler={handleOpen}
                 animate={{
                     mount: { scale: 1, y: 0 },
@@ -67,28 +67,28 @@ const AddBookmarkDialog = ({ open, handleOpen, getBookmarks }: any) =>{
                     <div className="flex mt-5">
                         <input
                             type="text"
-                            onChange={(e) => setTitle(e.target.value)}
+                            onChange={(e:ChangeEvent<HTMLInputElement>) => setTitle(e.target.value)}
                             value={title}
                             placeholder="Title"
-                            className="p-3 flex border border-grey rounded-md w-full"
+                            className="p-3 flex border border-gray-300 bg-transparent rounded-md w-full"
                         />
                     </div>
                     <div className="flex mt-5">
                         <input
                             type="text"
-                            onChange={(e) => setUrl(e.target.value)}
+                            onChange={(e:ChangeEvent<HTMLInputElement>) => setUrl(e.target.value)}
                             value={url}
                             placeholder="Url"
-                            className="p-3 flex border border-grey rounded-md w-full"
+                            className="p-3 flex border border-gray-300 bg-transparent rounded-md w-full"
                         />
                     </div>
                     <div className="flex mt-5">
                         <input
                             type="text"
-                            onChange={(e) => setDescription(e.target.value)}
+                            onChange={(e:ChangeEvent<HTMLInputElement>) => setDescription(e.target.value)}
                             value={description}
                             placeholder="Description"
-                            className="p-3 flex border border-grey rounded-md w-full"
+                            className="p-3 flex border border-gray-300 bg-transparent rounded-md w-full"
                         />
                     </div>
                     <div className="space-x-2 flex justify-end w-full mt-5">
