@@ -3,6 +3,7 @@ import React, {ChangeEvent, useState} from "react";
 import { Dialog } from "@material-tailwind/react";
 import { AiOutlineClose } from "react-icons/ai";
 import { ClipLoader } from "react-spinners";
+import {showToast} from "@/components/common/Toast";
 
 const AddBookmarkDialog = ({ open, handleOpen, getBookmarks }: any) =>{
     const [title, setTitle] = useState("");
@@ -14,26 +15,32 @@ const AddBookmarkDialog = ({ open, handleOpen, getBookmarks }: any) =>{
     const handleSubmit = async (e: { preventDefault: () => void }) => {
         e.preventDefault();
         setLoading(true);
-        try {
-            const res = await fetch("/api/bookmarks", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ title, url, description }),
-            });
-            setLoading(false);
-            if (res.ok) {
-                setTitle("");
-                setUrl("");
-                setDescription("");
-                getBookmarks();
-                handleOpen();
-            } else {
-                console.log("collection could not be created");
+        if (title !== "" && description !== "" && url !== "") {
+            try {
+                const res = await fetch("/api/bookmarks", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ title, url, description }),
+                });
+                setLoading(false);
+                if (res.ok) {
+                    setTitle("");
+                    setUrl("");
+                    setDescription("");
+                    getBookmarks();
+                    handleOpen();
+                    showToast('Link added successfully', 'success');
+                } else {
+                    console.log("collection could not be created");
+                }
+            } catch (error) {
+                console.error("Error saving collection:", error);
             }
-        } catch (error) {
-            console.error("Error saving collection:", error);
+        }else{
+            handleOpen();
+            showToast('Add link details to submit', 'error')
         }
         setLoading(false);
     };

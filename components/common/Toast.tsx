@@ -13,6 +13,7 @@ const Toast = ({ position = 'top-right', autoClose = 5000 }:any) =>{
             pauseOnFocusLoss
             draggable
             pauseOnHover
+            theme={'colored'}
         />
     )
 }
