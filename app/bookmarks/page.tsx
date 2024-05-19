@@ -34,7 +34,7 @@ const CollectionsPage = () =>{
                 </button>
             </div>}
             {
-                bookmarks.length > 0 ? <div className="grid grid-cols-3 w-full mt-10">
+                bookmarks.length > 0 ? <div className="flex flex-col p-4 w-full mt-10 space-y-4">
                         {
                             bookmarks.map((bookmark) => (
                                 <Bookmark bookmark={bookmark} key={bookmark.id}/>
