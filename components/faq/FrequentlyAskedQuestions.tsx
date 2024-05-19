@@ -34,7 +34,7 @@ const FrequentlyAskedQuestions = () => {
                         </button>
                         {openIndex === index && (
                             <div className="px-3 md:px-4 py-2">
-                                <p>{faq.answer}</p>
+                                <p className="text-gray-600">{faq.answer}</p>
                             </div>
                         )}
                     </div>

@@ -1,5 +1,5 @@
 import featuresInfo from '../../data/info.json'
-import SingleFeature from "@/components/faq/SingleFeature";
+import SingleFeature from "@/components/features/SingleFeature";
 
 const Features = () =>{
     return (

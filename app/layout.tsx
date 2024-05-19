@@ -7,6 +7,7 @@ import Footer from "@/components/footer/Footer";
 import {NextAuthProvider} from "@/app/providers";
 import {useEffect, useState} from "react";
 import Loader from "@/components/common/Loader";
+import {usePathname} from "next/navigation";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
@@ -15,6 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
     const [loading, setLoading] = useState<boolean>(true);
+    const pathname = usePathname();
+    const isAuth = pathname === "/auth";
     useEffect(() => {
         setTimeout(() => setLoading(false), 1000);
     }, []);
@@ -26,12 +29,12 @@ export default function RootLayout({
           {
               loading ? <Loader/> : <div className="min-h-screen">
                   {/*header component*/}
-                  <Header/>
+                  {!isAuth && <Header/>}
                   <main>
                       {children}
                   </main>
                   {/*  footer component*/}
-                  <Footer/>
+                  {!isAuth && <Footer/>}
               </div>
           }
       </NextAuthProvider>

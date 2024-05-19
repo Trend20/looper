@@ -9,7 +9,7 @@ const SingleFeature = ({feature}: any) => {
             <div>
                 <h2 className="text-lg font-bold">{feature.title}</h2>
 
-                <p className="mt-1 text-sm text-gray-300">
+                <p className="mt-1 text-sm text-gray-400">
                     {feature.description}
                 </p>
             </div>
