@@ -20,7 +20,7 @@ const Hero = () =>{
 
                     <div className="mt-8 flex flex-wrap justify-center gap-4">
                         <Link
-                            className="block w-full rounded-full border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+                            className="block w-full rounded-full border border-indigo-600 bg-[#4F46E5FF] px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
                             href={"/auth"}
                         >
                             Get Started
@@ -28,7 +28,7 @@ const Hero = () =>{
 
                         <Link
                             target={'_blank'}
-                            className="flex items-center justify-center space-x-3 w-full rounded-full border border-indigo-600 bg-white text-indigo-600 px-12 py-3 text-sm font-medium hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+                            className="flex items-center justify-center space-x-3 w-full rounded-full border border-indigo-600 bg-white text-[#4F46E5FF] px-12 py-3 text-sm font-medium hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
                             href={"https://github.com/Trend20/looper"}
                         >
                             <i className="mr-3"><FaGithub size={25}/></i> Star

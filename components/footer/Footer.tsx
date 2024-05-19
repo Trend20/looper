@@ -15,7 +15,7 @@ const Footer = () => {
                     <Link
                         href={"https://github.com/Trend20/looper"}
                         target="_blank"
-                        className="mt-8 inline-block rounded-full border border-indigo-600 bg-indigo-600 text-white px-12 py-3 text-sm font-medium hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500"
+                        className="mt-8 inline-block rounded-full border border-indigo-600 bg-[#4F46E5FF] text-white px-12 py-3 text-sm font-medium hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500"
                     >
                         Get Started
                     </Link>
