@@ -6,7 +6,7 @@ import {redirect} from "next/navigation";
 const AuthPage = () =>{
     const {data:session} = useSession();
     if(session){
-        redirect('/collections')
+        redirect('/bookmarks')
     }
     return(
         <div className="flex min-h-screen flex-col items-center justify-center">
