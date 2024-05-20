@@ -1,10 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "My Next.js Extension",
+  "name": "Looper",
+  "short_name": "looper",
   "version": "1.0",
-  "description": "A browser extension built with Next.js",
+  "description": "Organize",
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "extension.html",
     "default_icon": {
       "16": "icons/icon16.png",
       "48": "icons/icon48.png",
@@ -12,13 +13,10 @@
     }
   },
   "permissions": ["activeTab"],
-  "background": {
-    "service_worker": "background.js"
-  },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["contentScript.js"]
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["inject.js"]
     }
   ],
   "icons": {

@@ -1,5 +1,3 @@
-
-
 const TopSection = ({searchQuery, setSearchQuery, handleOpen}: any) =>{
     return (
         <div className="flex flex-col items-center w-full sticky bg-black top-24 py-10 z-40 px-20">
@@ -9,10 +7,10 @@ const TopSection = ({searchQuery, setSearchQuery, handleOpen}: any) =>{
                 <input type="text" placeholder="Search...."
                        value={searchQuery}
                        onChange={(e) => setSearchQuery(e.target.value)}
-                       className="p-3 w-1/2 border border-gray-600 rounded-full outline-0 focus:outline-none"
+                       className="p-3 w-1/2 border border-gray-600 rounded-md outline-0 focus:outline-none"
                 />
                 <button onClick={handleOpen}
-                        className="block w-full rounded-full border border-indigo-600 bg-[#4F46E5FF] px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none active:text-opacity-75 sm:w-auto">Add
+                        className="block w-full rounded-md border border-indigo-600 bg-[#4F46E5FF] px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none active:text-opacity-75 sm:w-auto">Add
                     Link
                 </button>
             </div>
