@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    assetPrefix: '.',
+    assetPrefix: '/',
     webpack: (config) => {
         config.output.publicPath = `./_next/`;
         return config;

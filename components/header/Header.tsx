@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useSession} from "next-auth/react";
 import {useState} from "react";
 import Logout from "@/app/auth/components/Logout";
+import Logo from "@/components/Logo";
 
 const Header = () =>{
     const { data: session } = useSession();
@@ -16,11 +17,7 @@ const Header = () =>{
         <header className="w-full py-4 sticky top-0 bg-black text-white p-4 z-50">
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
-                    <div className="md:flex md:items-center md:gap-12">
-                        <Link className="block text-teal-600" href="/">
-                            <Image src={'/logo.svg'} alt={'logo'} width={100} height={100}/>
-                        </Link>
-                    </div>
+                    <Logo />
                     <div className="flex items-center gap-4">
                         <div className="sm:flex sm:gap-4">
                             {!session ? <Link
