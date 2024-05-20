@@ -50,16 +50,21 @@ const CollectionsPage = () =>{
                     :
                     <div className="flex flex-col w-full">
                         {bookmarks && bookmarks.length > 0 &&
-                            <div className="flex justify-center sticky bg-black top-24 py-10 z-40 space-x-3 items-center px-20">
-                                <input type="text" placeholder="Search...."
-                                       className="p-3 w-1/2 border border-gray-600 rounded-full outline-0 focus:outline-none"/>
-                                <button onClick={handleOpen}
-                                        className="block w-full rounded-full border border-indigo-600 bg-[#4F46E5FF] px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none active:text-opacity-75 sm:w-auto">Add
-                                    Link
-                                </button>
-                            </div>}
+                            <div className="flex flex-col items-center w-full sticky bg-black top-24 py-10 z-40 px-20">
+                                <h3 className="text-3xl font-extrabold text-white sm:text-5xl">All Your Favorites, One Click Away</h3>
+                                <div
+                                    className="flex justify-center space-x-3 w-full mt-8">
+                                    <input type="text" placeholder="Search...."
+                                           className="p-3 w-1/2 border border-gray-600 rounded-full outline-0 focus:outline-none"/>
+                                    <button onClick={handleOpen}
+                                            className="block w-full rounded-full border border-indigo-600 bg-[#4F46E5FF] px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none active:text-opacity-75 sm:w-auto">Add
+                                        Link
+                                    </button>
+                                </div>
+                            </div>
+                        }
                         <div
-                            className="flex w-3/4 mx-auto shadow-2xl min-h-screen rounded-lg bg-gray-900 py-5 flex-col items-center justify-center">
+                            className="flex w-3/4 mx-auto shadow-2xl min-h-screen rounded-lg bg-[#001b2e] py-5 flex-col items-center justify-center">
                             <div className="flex flex-col p-4 w-full space-y-4">
                                 {
                                     bookmarks.map((bookmark) => (
