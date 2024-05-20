@@ -13,7 +13,7 @@ const Header = () =>{
         setShowCard(!showCard);
     }
     return (
-        <header className="w-full py-4">
+        <header className="w-full py-4 sticky top-0 bg-black text-white p-4 z-50">
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 items-center justify-between">
                     <div className="md:flex md:items-center md:gap-12">
