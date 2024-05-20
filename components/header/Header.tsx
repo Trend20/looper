@@ -37,7 +37,7 @@ const Header = () =>{
                     </div>
                 </div>
             </div>
-            {showCard && <div className="flex absolute right-72">
+            {showCard && <div className="flex absolute right-72 z-[100]">
                 <Logout/>
             </div>}
         </header>

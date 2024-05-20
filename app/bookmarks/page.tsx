@@ -50,7 +50,7 @@ const CollectionsPage = () =>{
                     :
                     <div className="flex flex-col w-full">
                         {bookmarks && bookmarks.length > 0 &&
-                            <div className="flex justify-center sticky bg-black top-24 py-10 z-50 space-x-3 items-center px-20">
+                            <div className="flex justify-center sticky bg-black top-24 py-10 z-40 space-x-3 items-center px-20">
                                 <input type="text" placeholder="Search...."
                                        className="p-3 w-1/2 border border-gray-600 rounded-full outline-0 focus:outline-none"/>
                                 <button onClick={handleOpen}
