@@ -100,7 +100,7 @@ const AddBookmarkDialog = ({ open, handleOpen, getBookmarks }: any) =>{
                     </div>
                     <div className="space-x-2 flex justify-end w-full mt-5">
                         <button
-                            className="p-3 flex justify-center items-center text-white rounded-md bg-indigo-600 font-light w-32"
+                            className="p-3 flex justify-center items-center text-white rounded-md bg-[#4F46E5FF] font-light w-32"
                             type="submit"
                         >
                             {loading ? <ClipLoader color="#fff"/> : "Submit"}
