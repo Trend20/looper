@@ -9,6 +9,7 @@ import {useEffect, useState} from "react";
 import Loader from "@/components/common/Loader";
 import {usePathname} from "next/navigation";
 import Toast from "@/components/common/Toast";
+import { Analytics } from "@vercel/analytics/react"
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
@@ -40,6 +41,7 @@ export default function RootLayout({
               </div>
           }
       </NextAuthProvider>
+      <Analytics />
       </body>
     </html>
     );
