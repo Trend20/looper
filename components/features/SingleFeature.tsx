@@ -1,6 +1,11 @@
 import Image from "next/image";
+import {Feature} from "@/types/feature";
 
-const SingleFeature = ({feature}: any) => {
+interface SingleFeatureProps {
+    feature: Feature;
+}
+
+const SingleFeature = ({feature}: SingleFeatureProps) => {
     return (
         <div className="flex items-start gap-4">
             <span className="shrink-0 rounded-lg bg-[#4F46E5FF] p-4">

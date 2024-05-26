@@ -4,6 +4,7 @@ import {useState} from "react";
 import { FiPlus } from "react-icons/fi";
 import { LiaTimesSolid } from "react-icons/lia";
 import faqData from '../../data/info.json'
+import {FAQ} from "@/types/faq";
 
 const FrequentlyAskedQuestions = () => {
     const [openIndex, setOpenIndex] = useState(null);
@@ -17,7 +18,7 @@ const FrequentlyAskedQuestions = () => {
                 Frequently Asked Questions
             </h2>
             <div className="space-y-4 w-full mt-6 md:mt-10 text-gray-400">
-                {faqData.faq.map((faq, index) => (
+                {faqData.faq.map((faq:FAQ, index:number) => (
                     <div className="border rounded-lg border-gray-600" key={index}>
                         <button
                             className="w-full flex items-center justify-between p-3 md:p-4"
@@ -25,12 +26,12 @@ const FrequentlyAskedQuestions = () => {
                         >
                             <span>{faq.question}</span>
                             <span className="text-lg md:text-xl">
-                  {openIndex === index ? (
-                      <LiaTimesSolid fill="#4F46E5FF"/>
-                  ) : (
-                      <FiPlus fill="#4ccd99"/>
-                  )}
-                </span>
+                            {openIndex === index ? (
+                                <LiaTimesSolid fill="#4F46E5FF"/>
+                            ) : (
+                                <FiPlus fill="#4ccd99"/>
+                            )}
+                            </span>
                         </button>
                         {openIndex === index && (
                             <div className="px-3 md:px-4 py-2">

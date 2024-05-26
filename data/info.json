@@ -66,5 +66,60 @@
         "name":"Brave",
         "icon":"/icons/brave.svg"
       }
-   ]
+   ],
+    "pricing": {
+    "free": [
+      {
+        "id": 1,
+        "name": "10 users included",
+        "icon": "/icons/checkmark.svg"
+      },
+      {
+        "id": 2,
+        "name": "2GB of storage",
+        "icon": "/icons/checkmark.svg"
+      },
+      {
+        "id": 3,
+        "name": "Email support",
+        "icon": "/icons/checkmark.svg"
+      },
+      {
+        "id": 4,
+        "name": "Help center access",
+        "icon": "/icons/checkmark.svg"
+      }
+    ],
+    "pro": [
+      {
+        "id": 1,
+        "name": "20 users included",
+        "icon": "/icons/checkmark.svg"
+      },
+      {
+        "id": 2,
+        "name": "5GB of storage",
+        "icon": "/icons/checkmark.svg"
+      },
+      {
+        "id": 3,
+        "name": "Email support",
+        "icon": "/icons/checkmark.svg"
+      },
+      {
+        "id": 4,
+        "name": "Help center access",
+        "icon": "/icons/checkmark.svg"
+      },
+      {
+        "id": 5,
+        "name": "Phone support",
+        "icon": "/icons/checkmark.svg"
+      },
+      {
+        "id": 6,
+        "name": "Community access",
+        "icon": "/icons/checkmark.svg"
+      }
+    ]}
   }

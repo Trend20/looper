@@ -1,5 +1,6 @@
 import extensionsData from '../../data/info.json'
 import SingleExtension from "@/components/extensions/SingleExtension";
+import {Extension} from "@/types/Extension";
 
 const Extensions = () =>{
     return (
@@ -14,8 +15,8 @@ const Extensions = () =>{
                 </div>
                 <div className="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
                     {
-                        extensionsData.extensions.map((extension) => (
-                            <SingleExtension key={extension.id} feature={extension} />
+                        extensionsData.extensions.map((extension:Extension) => (
+                            <SingleExtension key={extension.id} extension={extension} />
                         ))
                     }
                 </div>

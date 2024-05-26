@@ -1,5 +1,6 @@
 import featuresInfo from '../../data/info.json'
 import SingleFeature from "@/components/features/SingleFeature";
+import {Feature} from "@/types/feature";
 
 const Features = () =>{
     return (
@@ -14,7 +15,7 @@ const Features = () =>{
                 </div>
                 <div className="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
                     {
-                        featuresInfo.features.map((feature) => (
+                        featuresInfo.features.map((feature: Feature) => (
                             <SingleFeature key={feature.id} feature={feature} />
                         ))
                     }
