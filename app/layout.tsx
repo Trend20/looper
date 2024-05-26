@@ -22,7 +22,8 @@ export default function RootLayout({
     const isAuth = pathname === "/auth";
     const isBookmark = pathname === "/bookmarks";
     useEffect(() => {
-        setTimeout(() => setLoading(false), 1000);
+        const timer = setTimeout(() => setLoading(false), 1000);
+        return () => clearTimeout(timer);
     }, []);
 
     return (
