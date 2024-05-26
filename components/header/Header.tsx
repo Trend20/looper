@@ -5,6 +5,7 @@ import { useSession} from "next-auth/react";
 import {useState} from "react";
 import Logout from "@/app/auth/components/Logout";
 import Logo from "@/components/Logo";
+import Contribute from "@/components/Contribute";
 
 const Header = () =>{
     const { data: session } = useSession();
@@ -26,16 +27,20 @@ const Header = () =>{
                             >
                                 Login
                             </Link> :
-                               <button onClick={toggleCard}>
-                                   <Image src={session.user?.image!} alt={session.user?.name!} width={50} height={50} className="rounded-full" />
-                               </button>
+                                <div className="sm:flex sm:gap-4">
+                                    <button onClick={toggleCard}>
+                                        <Image src={session.user?.image!} alt={session.user?.name!} width={50}
+                                               height={50} className="rounded-full"/>
+                                    </button>
+                                    <Contribute />
+                                </div>
                             }
                         </div>
                     </div>
                 </div>
             </div>
             {showCard && <div className="flex absolute right-72 z-[100]">
-                <Logout/>
+            <Logout/>
             </div>}
         </header>
 

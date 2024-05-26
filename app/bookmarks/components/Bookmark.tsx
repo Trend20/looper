@@ -1,8 +1,12 @@
 import Link from "next/link";
-import {FaTrashAlt} from "react-icons/fa";
 import Image from "next/image";
+import {IBookmark} from "@/types/bookmark";
 
-const Bookmark = ({bookmark}: any) =>{
+interface BookmarkProps {
+    bookmark: IBookmark;
+}
+
+const Bookmark = ({bookmark}: BookmarkProps) =>{
     return (
         <div className="flex p-2 w-full justify-between rounded-lg border border-gray-800">
             <div className="flex flex-col w-3/4">

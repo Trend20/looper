@@ -20,6 +20,7 @@ export default function RootLayout({
     const [loading, setLoading] = useState<boolean>(true);
     const pathname = usePathname();
     const isAuth = pathname === "/auth";
+    const isBookmark = pathname === "/bookmarks";
     useEffect(() => {
         setTimeout(() => setLoading(false), 1000);
     }, []);
@@ -36,7 +37,7 @@ export default function RootLayout({
                       {children}
                   </main>
                   {/*  footer component*/}
-                  {!isAuth && <Footer/>}
+                  {(!isAuth && !isBookmark) && <Footer/>}
                   <Toast />
               </div>
           }

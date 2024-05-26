@@ -1,7 +1,12 @@
-const TopSection = ({searchQuery, setSearchQuery, handleOpen}: any) =>{
+interface TopSectionProps {
+    searchQuery: string;
+    setSearchQuery: (searchQuery: string) => void;
+    handleOpen: () => void;
+}
+const TopSection = ({searchQuery, setSearchQuery, handleOpen}: TopSectionProps) =>{
     return (
-        <div className="flex flex-col items-center w-full sticky bg-black top-24 py-10 z-40 px-20">
-            <h3 className="text-3xl font-extrabold text-white sm:text-5xl">All Your Favorites, One Click Away</h3>
+        <div className="flex flex-col items-center w-full sticky bg-black top-16 py-8 z-40 px-20">
+            <h6 className="text-xl font-extrabold text-white">All Your Favorites, One Click Away</h6>
             <div
                 className="flex justify-center space-x-3 w-full mt-8">
                 <input type="text" placeholder="Search...."
