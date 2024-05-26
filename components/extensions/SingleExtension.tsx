@@ -7,7 +7,7 @@ interface SingleExtensionProps {
 
 const SingleExtension = ({extension}:SingleExtensionProps) => {
     return (
-        <div className="flex items-center justify-center cursor-pointer border border-gray-600 rounded-lg p-3">
+        <div className="flex items-center justify-center cursor-pointer border border-[#4F46E5FF] rounded-lg p-3">
             <Image src={extension.icon} alt={extension.name} width={100} height={100}/>
         </div>
     )
