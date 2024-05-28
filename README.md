@@ -7,15 +7,13 @@
   Looper is an open-source bookmark and link manager to organize, discover and personalize your bookmarking experience.
 </p>
 
-[//]: # (<p align="center">)
+<p align="center">
 
-[//]: # (  <a href="https://github.com/gokulkrishh/bmrk.cc/blob/main/LICENSE">)
+  <a href="https://github.com/Trend20/looper/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/Trend20/looper?label=license&logo=github&color=f80&logoColor=fff" alt="License" />
+  </a>
 
-[//]: # (    <img src="https://img.shields.io/github/license/gokulkrishh/bmrk.cc?label=license&logo=github&color=f80&logoColor=fff" alt="License" />)
-
-[//]: # (  </a>)
-
-[//]: # (</p>)
+</p>
 
 <p align="center">
   <a href="#intro"><strong>Introduction</strong></a> ·
@@ -103,4 +101,4 @@ Here's how you can contribute:
 
 ### License
 
-You can [find it here](https://github.com/gokulkrishh/bmrk.cc/blob/main/LICENSE).
+Find it [here](https://github.com/Trend20/looper/blob/main/LICENSE).
