@@ -4,7 +4,7 @@
 </a>
 
 <p align="center">
-  Looper is an open-source bookmark and link manager to discover and organize your bookmarks.
+  Looper is an open-source bookmark and link manager.
 </p>
 
 <p align="center">
@@ -23,7 +23,7 @@
 
 ## Intro
 
-Looper is an open-source bookmark and link manager to discover and organize your bookmarks.
+Looper is an open-source bookmark and link manager.
 
 ### Our Tech Stack
 
@@ -88,8 +88,8 @@ Start the server
 
 Here's how you can contribute:
 
-- [Open an issue](https://github.com/gokulkrishh/bmrk.cc/issues) incase of any bug.
-- Create a [pull request](https://github.com/gokulkrishh/bmrk.cc/pull) to make your contributions visible.
+- [Open an issue](https://github.com/Trend20/looper/issues) incase of any bug.
+- Create a [pull request](https://github.com/Trend20/looper/pulls) to make your contributions visible.
 
 <a href="https://github.com/Trend20/looper/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Trend20/looper" alt="contributors" />
