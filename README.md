@@ -4,15 +4,13 @@
 </a>
 
 <p align="center">
-  Looper is an open-source bookmark and link manager to organize, discover and personalize your bookmarking experience.
+  Looper is an open-source bookmark and link manager to discover and organize your bookmarks.
 </p>
 
 <p align="center">
-
   <a href="https://github.com/Trend20/looper/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/Trend20/looper?label=license&logo=github&color=f80&logoColor=fff" alt="License" />
   </a>
-
 </p>
 
 <p align="center">
@@ -25,19 +23,21 @@
 
 ## Intro
 
-Looper is an open-source bookmark manager to organize, discover and personalize your bookmarking experience.
+Looper is an open-source bookmark and link manager to discover and organize your bookmarks.
 
 ### Our Tech Stack
 
 - [Next.js](https://nextjs.org/) – framework
 - [Tailwind](https://tailwindcss.com/) – CSS
 - [Prisma](https://www.prisma.io/) – ORM
+- [NextAuth.js](https://next-auth.js.org/) – Authentication
 - [MongoDB](https://www.mongodb.com/) – database
 - [Vercel](https://vercel.com/) – hosting
 
 ### Implementation
 
 - Looper built using [NextJs](https://nextjs.org) v14 from scratch.
+- [NextAuth.js](https://next-auth.js.org/) – Authentication for NextJS
 - [Prisma ORM](https://www.prisma.io/) Open source Node.js and TypeScript ORM with an intuitive data model, automated migrations, type-safety, and auto-completion.
 - [MongoDB](https://www.mongodb.com/) is an open-source NoSQL database, the data is stored and retrieved using Prisma ORM.
 - [LemonSqueezy](https://lemonsqueezy.com/) is used as the payment system. Its implementation is super simple.
