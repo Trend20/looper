@@ -2,26 +2,30 @@
   "manifest_version": 3,
   "name": "Looper",
   "short_name": "looper",
-  "version": "1.0",
-  "description": "Organize",
+  "version": "1.0.0",
+  "description": "Managing bookmarks made easy",
   "action": {
-    "default_popup": "extension.html",
+    "default_popup": "index.html",
+    "default_title": "Looper",
     "default_icon": {
-      "16": "icons/icon16.png",
-      "48": "icons/icon48.png",
-      "128": "icons/icon128.png"
+      "16": "logo.svg",
+      "48": "logo.svg",
+      "128": "logo.svg"
     }
   },
-  "permissions": ["activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["activeTab", "storage"],
   "content_scripts": [
     {
-      "matches": ["https://*/*", "http://*/*"],
+      "matches": ["<all_urls>"],
       "js": ["inject.js"]
     }
   ],
   "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
+    "16": "logo.svg",
+    "48": "logo.svg",
+    "128": "logo.svg"
   }
 }
